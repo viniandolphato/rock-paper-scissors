@@ -24,13 +24,13 @@ section {
 }
 
 .score h2 {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .score p {
     text-align: center;
     padding: 10px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .player-score,
@@ -58,7 +58,7 @@ section {
 
 .intro button, 
 .match button {
-    width: 120px;
+    width: 105px;
     height: 50px;
     background: none;
     border: none;
@@ -72,13 +72,10 @@ section {
 }
 
 .match {
-    position: absolute;
-
-
-
-    top: 50%;
+    position: relative;
+    top: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -100%);
     transition: opacity 0.5s ease 0.5s;
 }
 
@@ -90,11 +87,23 @@ section {
 
 .hands,
 .options {
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, 0%);
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     max-width: 80vh;
+}
+
+.player-hand {
+    margin-left: 70px;
+    margin-right: -20px;
+}
+.computer-hand {
+    margin-left: -20px;
+    margin-right: 70px;
 }
 
 .player-hand {
