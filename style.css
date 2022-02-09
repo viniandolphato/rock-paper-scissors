@@ -5,17 +5,17 @@
 }
 
 body {
-  background-color: rgb(60, 60, 90);
+  background-color: rgb(80, 80, 90);
 }
 
 section {
-    height: 100vh;
-    background-color: rgb(60, 60, 90);
+    height: 85vh;
+    background-color: rgb(80, 80, 90);
     font-family: sans-serif;
 }
 
 .score {
-    color: rgb(230, 230, 230);
+    color: rgb(235, 235, 235);
     height: 20vh;
     display: flex;
     justify-content: space-around;
@@ -41,7 +41,7 @@ section {
 }
 
 .intro {
-    color: rgb(230, 230, 230);
+    color: rgb(235, 235, 235);
     height: 50vh;
     display: flex;
     flex-direction: column;
@@ -56,32 +56,43 @@ section {
     align-content: center;
 }
 
-.intro button, 
+.intro button {
+  width: 165px;
+  height: 50px;
+  background: none;
+  border: none;
+  color: rgb(235, 235, 235);
+  font-size: 20px;
+  background-color: rgb(45, 117, 96);
+  border-radius: 5px;
+  cursor: pointer;
+  display: flexbox;
+}
+
 .match button {
     width: 105px;
     height: 50px;
     background: none;
     border: none;
-    color: rgb(230, 230, 230);
+    color: rgb(235, 235, 235);
     font-size: 20px;
     background-color: rgb(45, 117, 96);
     border-radius: 5px;
     cursor: pointer;
-
     display: flexbox;
 }
 
 .match {
     position: relative;
-    top: 10%;
+    top: 5%;
     left: 50%;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -110%);
     transition: opacity 0.5s ease 0.5s;
 }
 
 .winner {
-    color: rgb(230, 230, 230);
-    font-size: 50px;
+    color: rgb(235, 235, 235);
+    font-size: 40px;
     text-align: center;
 }
 
@@ -99,10 +110,10 @@ section {
 
 .player-hand {
     margin-left: 70px;
-    margin-right: -20px;
+    margin-right: -28px;
 }
 .computer-hand {
-    margin-left: -20px;
+    margin-left: -28px;
     margin-right: 70px;
 }
 
@@ -122,7 +133,7 @@ section {
     height: 50px;
     background: none;
     border: none;
-    color: rgb(230, 230, 230);
+    color: rgb(235, 235, 235);
     background-color: rgb(160, 25, 25);
 }
 
